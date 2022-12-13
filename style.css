@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #636b74;
+    height: 100vh;
+
+}
+
+
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #13293d;
+    color: #fff;
+    vertical-align: baseline;
+    height: auto;
+}
+
+.main-header button {
+    background-color: #56b321;
+    border-radius: 10px 100px / 120px;
+
+}
+.quiz-box {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: bottom;
+    height: 6in;
+}
+
+.quiz-box button {
+    background-color:red;
+    height: 175px;
+    width: 250px;
+    vertical-align: bottom;
+
+}
