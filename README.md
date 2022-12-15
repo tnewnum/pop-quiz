@@ -12,21 +12,12 @@ No installation required
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![image](https://user-images.githubusercontent.com/117390778/207412857-9df4ce2f-18a0-46e3-b375-6df783315f88.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+@nickherman - best study budy a guy could have. See ya at 5am man.
+@marrywebby - Thanks so much for the help - dont worry - this has got to get easier! 
 
 ## License
 
