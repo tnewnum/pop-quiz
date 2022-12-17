@@ -3,7 +3,7 @@ let startTime = document.querySelector(".start");
 let startQuiz = document.querySelector(".start");
 let button = document.querySelector(".start")
 var timerElement = document.querySelector(".timer-count")
-let i = 60;
+let i = 3;
 let timer;
 
 
@@ -32,11 +32,15 @@ startTimer()
 
 // event listent - start quiz button - start quiz questions
         // roll through 1 by 1 - driven by user's answer "click"
-startQuiz.addEventListener("click", function() {            
         //multiple choice answers 
         //maybe an alert for prior question correct/incorrect?
-    $('.quiz-box').children().hide()
+startQuiz.addEventListener("click", function() {            
+        
+    
 
+    $('.quiz-box').children().eq(1).append($('<li>Classmates</li>'));
+
+    $('.quiz-box').children().eq(0).hide()
 
 });
 
