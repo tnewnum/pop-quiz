@@ -1,11 +1,13 @@
 //Globaly defind variables
-//let startTime = document.querySelector("start");
+let startTime = document.querySelector(".start");
 var timerElement = document.querySelector(".timer-count")
 let i = 60;
 let timer;
 
 
-
+// event listener - start quiz button - start timer 
+startTime.addEventListener("click", function(){
+   
 //countdown timer starting at 60 and stops at 0
 
 function startTimer(){
@@ -20,29 +22,14 @@ function startTimer(){
     }, 1000);
 }
 startTimer()
+   
 
-
+});
 
 
 //Globaly defind variables
 //let startQuiz = document.querySelector("start");
 //let timerEl = document.getElementById("timer");
-
-
-
-//$('#root').children('header').children().add( '<p>' ).css( "background", "yellow")
-//.css( "background-color", "red" );
-
-//$('#root').children().eq(0).children().eq(1).css("background-color", "white");
-
-
-
-
-
-
-
-
-
 
 
 
@@ -63,35 +50,12 @@ startTimer()
 //});
 
 
-// event listener - start quiz button - start timer 
-//startTime.addEventListener("click", function(){
-        //count down starting at 60 seconds
-       
-    
-        // Timer that counts down from 30
-
-        /*
-function countdown() {
-    var timeLeft = 30;
-
-// Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
-    var timeInterval = setInterval(function () {
-  // As long as the `timeLeft` is greater than 1
-  if (timeLeft > 1) {
-    timeLeft--;
-  } else {
-    // Once `timeLeft` gets to 0, set `timerEl` to an empty string
-    timerEl.textContent = '';
-    // Use `clearInterval()` to stop the timer
-    clearInterval(timeInterval);
-    
-  }
-}, 1000);
-}
-countdown();*/
+// event listener - start quiz button 
+/*startTime.addEventListener("click", function(){
+   
    
 
-//});
+});*/
 
 
 //User input box - initials & Score saves to local
