@@ -19,6 +19,8 @@ No installation required
 @nickherman - best study budy a guy could have. See ya at 5am man.
 @marrywebby - Thanks so much for the help - dont worry - this has got to get easier! 
 
+https://code.mu/en/javascript/book/prime/timers/timer-stopping/
+
 ## License
 
 None

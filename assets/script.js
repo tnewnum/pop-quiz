@@ -1,5 +1,7 @@
 //Globaly defind variables
 let startTime = document.querySelector(".start");
+let startQuiz = document.querySelector(".start");
+let button = document.querySelector(".start")
 var timerElement = document.querySelector(".timer-count")
 let i = 60;
 let timer;
@@ -27,35 +29,16 @@ startTimer()
 });
 
 
-//Globaly defind variables
-//let startQuiz = document.querySelector("start");
-//let timerEl = document.getElementById("timer");
-
-
-
 
 // event listent - start quiz button - start quiz questions
         // roll through 1 by 1 - driven by user's answer "click"
-//startQuiz.addEventListener("click", function() {
-        //code to roll questions
-        //Questions ( no min question required)
-        
-
-
-
-
+startQuiz.addEventListener("click", function() {            
         //multiple choice answers 
         //maybe an alert for prior question correct/incorrect?
+    $('.quiz-box').children().hide()
 
-//});
 
-
-// event listener - start quiz button 
-/*startTime.addEventListener("click", function(){
-   
-   
-
-});*/
+});
 
 
 //User input box - initials & Score saves to local
