@@ -1,10 +1,76 @@
 //Globaly defind variables
-let startQuiz = document.querySelector("start");
-let startTime = document.querySelector("start");
-let timerEl = document.getElementById("timer");
+//let startTime = document.querySelector("start");
+var timerElement = document.querySelector(".timer-count")
+let i = 60;
+let timer;
 
 
 
+//countdown timer starting at 60 and stops at 0
+
+function startTimer(){
+    timer = setInterval(function() {
+        i--;
+        timerElement.textContent = i;
+
+    
+        if ( i === 0){
+            clearInterval(timer)
+        }
+    }, 1000);
+}
+startTimer()
+
+
+
+
+//Globaly defind variables
+//let startQuiz = document.querySelector("start");
+//let timerEl = document.getElementById("timer");
+
+
+
+//$('#root').children('header').children().add( '<p>' ).css( "background", "yellow")
+//.css( "background-color", "red" );
+
+//$('#root').children().eq(0).children().eq(1).css("background-color", "white");
+
+
+
+
+
+
+
+
+
+
+
+
+
+// event listent - start quiz button - start quiz questions
+        // roll through 1 by 1 - driven by user's answer "click"
+//startQuiz.addEventListener("click", function() {
+        //code to roll questions
+        //Questions ( no min question required)
+        
+
+
+
+
+        //multiple choice answers 
+        //maybe an alert for prior question correct/incorrect?
+
+//});
+
+
+// event listener - start quiz button - start timer 
+//startTime.addEventListener("click", function(){
+        //count down starting at 60 seconds
+       
+    
+        // Timer that counts down from 30
+
+        /*
 function countdown() {
     var timeLeft = 30;
 
@@ -22,51 +88,10 @@ function countdown() {
   }
 }, 1000);
 }
-countdown();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// event listent - start quiz button - start quiz questions
-        // roll through 1 by 1 - driven by user's answer "click"
-startQuiz.addEventListener("click", function() {
-        //code to roll questions
-        //Questions ( no min question required)
-        
-
-
-
-
-        //multiple choice answers 
-        //maybe an alert for prior question correct/incorrect?
-
-});
-
-
-// event listener - start quiz button - start timer 
-startTime.addEventListener("click", function(){
-        //count down starting at 60 seconds
-       
-    
-        // Timer that counts down from 30
+countdown();*/
    
 
-});
-
-
-
-
-
+//});
 
 
 //User input box - initials & Score saves to local
@@ -77,7 +102,7 @@ const QUESTIONS = "";
 
 // Questions to be asked
  QUESTIONS = [{
-        id: 0,
+        id: zero,
         q: "What does HTML stand for ?",
         a: [{ text: "High Tommy ate My Lunch ", isCorrect: false },
             { text: "Hurry To Manditory Meeting", isCorrect: false },
@@ -87,7 +112,7 @@ const QUESTIONS = "";
   
     },
     {
-        id: 1,
+        id: one,
         q: "What does CSS stand for?",
         a: [{ text: "Coloring Style Sheet", isCorrect: false },
             { text: "Cool Student Survey", isCorrect: false },
@@ -97,7 +122,7 @@ const QUESTIONS = "";
   
     },
     {
-        id: 2,
+        id: two,
         q: "What does JS stand for?",
         a: [{ text: "Just Saying", isCorrect: false },
             { text: "Jessica Simpson", isCorrect: false },
@@ -107,7 +132,7 @@ const QUESTIONS = "";
   
     },
     {
-        id: 3,
+        id: three,
         q: "What is an 'operator' in Javascript?",
         a: [{ text: "Jason Borne", isCorrect: false },
             { text: "oper8or", isCorrect: false },
@@ -117,7 +142,7 @@ const QUESTIONS = "";
 
     },
     {
-        id: 4,
+        id: four,
         q: "If you dont know how to do something, what do you do?",
         a: [{ text: "Just give up, this is too hard anyway", isCorrect: false },
             { text: "Ask for help, take a break to clear your head, office hours, get a tutor", isCorrect: true },
@@ -125,6 +150,5 @@ const QUESTIONS = "";
             { text: "just google it and throw any code in there you can find, it will work", isCorrect: false }
         ]
 
-    },
-  
-];*/
+    },*/ 
+
