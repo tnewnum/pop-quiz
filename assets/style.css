@@ -28,7 +28,6 @@ body {
 
 .quiz-box {
     height: 200px;
-    display: flex;
     align-items: center;
     justify-content: center;
     vertical-align: bottom;
@@ -38,7 +37,7 @@ body {
     background-color: palegoldenrod;
 }
 
-.quiz-box button {
+.quiz-box .start {
     background-color:red;
     height: 175px;
     width: 250px;
@@ -48,6 +47,10 @@ body {
 
 }
 
-#timer {
-  
-}
+
+.boxy {
+    color:black;
+    border: black 2px solid;
+    text-align: center;
+    border-radius: .4rem;
+  } 

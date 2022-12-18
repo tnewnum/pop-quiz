@@ -9,7 +9,7 @@ let a_text = document.getElementById('a_text')
 let b_text = document.getElementById('b_text')
 let c_text = document.getElementById('c_text')
 let d_text = document.getElementById('d_text')
-let i = 61;
+let i = 60;
 let timer;
 let currentQuestion = 0;
 let score = 0;
@@ -19,11 +19,11 @@ let score = 0;
 let quizQuestions = [
 {
     question:"What does HTML stand for?",
-    a:"Hi, Tommy at My Lunch",
+    a:"Hi, Tommy ate My Lunch",
     b:"Hurry to Manditoy Meeting",
     c:"Hypertext Markup Language",
     d:"Hpyertext Makeup Language",
-    correct: "c",
+    correct: "Hypertext Markup Language",
 },
 {
     question:"What does CSS stand for?",
@@ -31,7 +31,7 @@ let quizQuestions = [
     b:"Cool Student Survey",
     c:"Cascade Style Shoes",
     d:"Cascading Style Sheets",
-    correct: "d",
+    correct: "Cascading Style Sheets",
 },
 {
     question:"What does JS stnd for?",
@@ -39,7 +39,7 @@ let quizQuestions = [
     b:"Jessica Simpson",
     c:"JavaScript",
     d:"Jesery Shore",
-    correct: "c",
+    correct: "JavaScript",
 },
 {
     question:"Which of the below is an 'operator' in JavaScript?",
@@ -47,7 +47,7 @@ let quizQuestions = [
     b:"oper8or",
     c:"+ - / *",
     d:"The person who actually makes the internet work.",
-    correct: "c",
+    correct: "+ - / *",
 },
 {
     question:"If you dont know how to do something, what should you do?",
@@ -55,7 +55,7 @@ let quizQuestions = [
     b:"Ask for help, take a break and clear your head, office hours, sign up for a tutor",
     c:"+ - / *",
     d:"Just Google it and use any code you find - it will work!",
-    correct: "cb",
+    correct: "Ask for help, take a break and clear your head, office hours, sign up for a tutor",
 },    
 ];
 
@@ -91,20 +91,26 @@ function loadQuestion() {
     clearSlection();
 
     let displayedQuestion = quizQuestions[currentQuestion]
-    console.log(displayedQuestion.question);
+    //console.log(displayedQuestion.question);
 
     questionEl.innerText = displayedQuestion.question;
     a_text.innerText = displayedQuestion.a;
+    //console.log(displayedQuestion.a);
     b_text.innerText = displayedQuestion.b;
+    //console.log(displayedQuestion.b);
     c_text.innerText = displayedQuestion.c;
+    //console.log(displayedQuestion.c);
     d_text.innerText = displayedQuestion.d;
+    //console.log(displayedQuestion.d);
 };
+
 
 //function to clear answer selection 
 function clearSlection() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 };
 
+/*
 //function that holds the answer selected
 function getSelection() {
     let answer;
@@ -116,10 +122,11 @@ function getSelection() {
     })
     return answer;
 
-};
+};*/
 
-function handleSubmit() {
-    const answer = getSelection();
+function handleSubmit(e) {
+    const answer = e.target.innerText;
+    console.log(answer)
 
     if(answer) {
         if(answer === quizQuestions[currentQuestion].correct){
@@ -133,13 +140,17 @@ function handleSubmit() {
         }
 
         else {
-            quiz.innerHTML = '<h2>You answered ${score}/${quizQuestions.length} questions correctly.</h2>'
+            questionEl.innerHTML = `<h2>You answered ${score}/${quizQuestions.length} questions correctly.</h2>`
         
         }
     }
 };
 
+answerEls.forEach(answer => {
 
+    answer.addEventListener('click' , handleSubmit)
+
+} );
 
 
 
@@ -153,6 +164,7 @@ startQuiz.addEventListener("click", function() {
 
 });
 
+$('.quiz-box').children().addClass('boxy')
 
 //User input box - initials & Score saves to local
 
