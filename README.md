@@ -3,7 +3,7 @@
 ## Description
 
 A short quiz to test the user's skills on HTML,CSS,Java
-
+You can see it at this link: https://tnewnum.github.io/newnum-pop-quiz/
 
 
 ## Installation
@@ -12,7 +12,7 @@ No installation required
 
 ## Usage
 
-![image](https://user-images.githubusercontent.com/117390778/207412857-9df4ce2f-18a0-46e3-b375-6df783315f88.png)
+![image](https://user-images.githubusercontent.com/117390778/208522807-325f982b-eab5-459e-a93b-d8715272faf0.png)
 
 ## Credits
 

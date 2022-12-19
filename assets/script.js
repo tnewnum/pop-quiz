@@ -65,6 +65,7 @@ let quizQuestions = [
 // event listener - load question - start timer - show the boxes the questions load in 
 startTime.addEventListener("click", function(){
     startTimer();
+    $('.quiz-boz').css('display', 'grid')
     $('.quiz-box').children().eq(1).show()
     $('.quiz-box').children().eq(2).show()
     $('.quiz-box').children().eq(3).show()

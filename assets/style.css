@@ -7,6 +7,9 @@
     background-color: #636b74;
     height: 100vh;
     font-family: monospace;
+    align-items: center;
+    justify-content: center;
+    vertical-align: bottom;
     
 
 }
@@ -30,29 +33,27 @@
 }
 
 .quiz-box {
+    display: ;
     height: 200px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
     height: 6in;
     margin: 10px;
     padding: 5px;
-    
+  
 
 }
 
 .start {
     background-color:green;
-    height: 175px;
-    width: 250px;    
+    height: 50%;
+    width: 50%;    
     border-radius: 25px;
     font-weight: bolder;
     font-size: xx-large;
-    align-items: center;
-    justify-content: center;
-    vertical-align: bottom;
-
-}
+    margin: auto;
+   }
 
 .quiz-box .answer {
     background-color: #0bca24;
