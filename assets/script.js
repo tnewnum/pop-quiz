@@ -61,11 +61,18 @@ let quizQuestions = [
 
 
 
-
 // event listener - load question - start timer 
 startTime.addEventListener("click", function(){
     startTimer();
+    $('.quiz-box').children().eq(1).show()
+    $('.quiz-box').children().eq(2).show()
+    $('.quiz-box').children().eq(3).show()
+    $('.quiz-box').children().eq(4).show()
+    $('.quiz-box').children().eq(5).show()
     loadQuestion();
+
+
+
 });
 
 
@@ -165,6 +172,11 @@ startQuiz.addEventListener("click", function() {
 });
 
 $('.quiz-box').children().addClass('boxy')
+$('.quiz-box').children().eq(1).hide()
+$('.quiz-box').children().eq(2).hide()
+$('.quiz-box').children().eq(3).hide()
+$('.quiz-box').children().eq(4).hide()
+$('.quiz-box').children().eq(5).hide()
 
 //User input box - initials & Score saves to local
 
