@@ -62,7 +62,7 @@ let quizQuestions = [
 
 
 
-// event listener - load question - start timer 
+// event listener - load question - start timer - show the boxes the questions load in 
 startTime.addEventListener("click", function(){
     startTimer();
     $('.quiz-box').children().eq(1).show()
@@ -71,7 +71,6 @@ startTime.addEventListener("click", function(){
     $('.quiz-box').children().eq(4).show()
     $('.quiz-box').children().eq(5).show()
     loadQuestion();
-
 
 
 });
@@ -88,7 +87,9 @@ function startTimer(){
         if ( i === 0){
             clearInterval(timer)
             alert("GAME OVER")
+            location.reload();
         }
+       
     }, 1000);
 };
 
@@ -132,6 +133,7 @@ function getSelection() {
 
 };
 
+//function to keep score and logs score at final question 
 function handleSubmit(e) {
     const answer = e.target.innerText;
     console.log(answer)
@@ -148,7 +150,8 @@ function handleSubmit(e) {
         }
 
         else {
-            questionEl.innerHTML = `<h2>You answered ${score}/${quizQuestions.length} questions correctly.</h2>`
+            window.alert(`You answered ${score}/${quizQuestions.length} questions correctly!`)
+            location.reload();
         
         }
         
@@ -156,6 +159,7 @@ function handleSubmit(e) {
     
 };
 
+//listens for a click on the answers to tell if the correct answer was selected 
 answerEls.forEach(answer => {
 
     answer.addEventListener('click' , handleSubmit)
@@ -164,21 +168,20 @@ answerEls.forEach(answer => {
 
 
 
-// event listent - start quiz button - start quiz questions
-        // roll through 1 by 1 - driven by user's answer "click"
-        //multiple choice answers 
-        //maybe an alert for prior question correct/incorrect?
+// event listent - start quiz button - hides start button
 startQuiz.addEventListener("click", function() {            
         
       $('.quiz-box').children().eq(0).hide()
 
 });
 
+//"view high scores" alert message 
 scores.addEventListener('click', function (){
     
     window.alert("Why are you worried about high scores? You better go study!")
 });
 
+//hides the quiz boxes while "start quiz" is showing
 $('.quiz-box').children().addClass('boxy')
 $('.quiz-box').children().eq(1).hide()
 $('.quiz-box').children().eq(2).hide()
@@ -186,6 +189,6 @@ $('.quiz-box').children().eq(3).hide()
 $('.quiz-box').children().eq(4).hide()
 $('.quiz-box').children().eq(5).hide()
 
-//User input box - initials & Score saves to local
+
 
 
