@@ -3,13 +3,14 @@ let startTime = document.querySelector(".start");
 let startQuiz = document.querySelector(".start");
 let button = document.querySelector(".start")
 let timerElement = document.querySelector(".timer-count")
+let scores = document.querySelector(".high")
 let answerEls = document.querySelectorAll('.answer')
 let questionEl = document.getElementById('question')
 let a_text = document.getElementById('a_text')
 let b_text = document.getElementById('b_text')
 let c_text = document.getElementById('c_text')
 let d_text = document.getElementById('d_text')
-let i = 60;
+let i = 10;
 let timer;
 let currentQuestion = 0;
 let score = 0;
@@ -117,7 +118,7 @@ function clearSlection() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 };
 
-/*
+
 //function that holds the answer selected
 function getSelection() {
     let answer;
@@ -129,7 +130,7 @@ function getSelection() {
     })
     return answer;
 
-};*/
+};
 
 function handleSubmit(e) {
     const answer = e.target.innerText;
@@ -150,7 +151,9 @@ function handleSubmit(e) {
             questionEl.innerHTML = `<h2>You answered ${score}/${quizQuestions.length} questions correctly.</h2>`
         
         }
+        
     }
+    
 };
 
 answerEls.forEach(answer => {
@@ -169,6 +172,11 @@ startQuiz.addEventListener("click", function() {
         
       $('.quiz-box').children().eq(0).hide()
 
+});
+
+scores.addEventListener('click', function (){
+    
+    window.alert("Why are you worried about high scores? You better go study!")
 });
 
 $('.quiz-box').children().addClass('boxy')

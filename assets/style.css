@@ -21,14 +21,6 @@
     height: auto;
 }
 
-
-.timer-count {
-
-   
-    font-weight: 900;
-    font-size: xx-large;
-
-}
 .main-header button {
     background-color: #56b321;
     border-radius: 10px 100px / 120px;
@@ -46,7 +38,7 @@
 
 }
 
-.quiz-box .start {
+.start {
     background-color:green;
     height: 175px;
     width: 250px;
@@ -54,6 +46,7 @@
     justify-content: center;
     border-radius: 25px;
     font-weight: bolder;
+    font-size: xx-large;
 
 }
 
