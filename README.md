@@ -23,6 +23,13 @@ Installation is not required
 
 Click "Start Quiz" - try and answer all questions before time runs out!
 
+![image](https://user-images.githubusercontent.com/117390778/222498306-3201240e-2bc8-493a-b8c7-4d8ab24deaa4.png)
+
+![image](https://user-images.githubusercontent.com/117390778/222498394-9885f4d2-c466-44dc-862f-43c21cd63438.png)
+
+![image](https://user-images.githubusercontent.com/117390778/222498491-5086722a-5803-49d5-a55f-c60b0e11c124.png)
+
+
 ## 🔒 License
 
 This project is covered under : No License at this time!
